@@ -43,7 +43,7 @@ after_script:
   - ./gradlew assembleRelease crashlyticsUploadDistributionRelease -Pandroid.injected.signing.store.file=./app/$MANEZIN_RELEASE_STORE_FILE -Pandroid.injected.signing.store.password=$MANEZIN_RELEASE_STORE_PASSWORD -Pandroid.injected.signing.key.alias=$MANEZIN_RELEASE_KEY_ALIAS -Pandroid.injected.signing.key.password=$MANEZIN_RELEASE_KEY_PASSWORD
 branches:
   only:
-  - master
+  - main
 notifications:
   email:
     on_success: never
