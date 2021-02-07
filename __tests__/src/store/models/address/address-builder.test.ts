@@ -9,7 +9,7 @@ describe('AddressBuilder', () => {
   it('Should create an Address', () => {
     expect(toJS(new AddressBuilder().build())).toStrictEqual({
       street: '',
-      contry: '',
+      country: '',
       city: '',
       neighborhood: '',
       zipCode: '',
@@ -20,7 +20,7 @@ describe('AddressBuilder', () => {
   it('Should create an Address with coordinates', () => {
     expect(toJS(new AddressBuilder().coordinates(0, 0).build())).toStrictEqual({
       street: '',
-      contry: '',
+      country: '',
       city: '',
       neighborhood: '',
       zipCode: '',
