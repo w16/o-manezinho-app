@@ -2,7 +2,7 @@ import { toJS } from 'mobx';
 import { User, UserBuilder } from 'store';
 
 describe('UserBuilder', () => {
-  it('Should return a instance of User', () => {
+  it('Should return an instance of User', () => {
     expect(new UserBuilder().build()).toBeInstanceOf(User);
   });
 
