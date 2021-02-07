@@ -22,7 +22,7 @@ describe('PlaceBuilder', () => {
       description: '',
       address: {
         street: '',
-        contry: '',
+        country: '',
         city: '',
         neighborhood: '',
         zipCode: '',
