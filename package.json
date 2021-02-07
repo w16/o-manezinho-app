@@ -9,7 +9,8 @@
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "tailwind": "npx create-tailwind-rn",
-    "format": "prettier --write \"**/*.+(js|jsx|ts|tsx|json|sass|scss|md)\""
+    "format": "prettier --write \"**/*.+(js|jsx|ts|tsx|json|sass|scss|md)\"",
+    "test-ci": "jest --bail"
   },
   "dependencies": {
     "@react-native-community/masked-view": "^0.1.10",
