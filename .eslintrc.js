@@ -18,6 +18,7 @@ module.exports = {
     '@typescript-eslint/no-use-before-define': 2,
     'import/prefer-default-export': 0,
     'import/no-unresolved': 0, // Disabled because is typescript who guarantees files import resolution
+    'import/extensions': [2, 'never', { svg: 'always' }],
     'no-plusplus': [2, { allowForLoopAfterthoughts: true }],
     'no-underscore-dangle': 0,
     'no-use-before-define': 0,
@@ -25,7 +26,15 @@ module.exports = {
     'react/jsx-filename-extension': [1, { extensions: ['.tsx'] }],
   },
   globals: {
-    fetch: false,
     __DEV__: 'readonly',
+    fetch: false,
+    Nullable: 'readonly',
+  },
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      },
+    },
   },
 };
