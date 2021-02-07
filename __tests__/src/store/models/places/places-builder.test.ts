@@ -28,18 +28,8 @@ describe('PlaceBuilder', () => {
         zipCode: '',
         coordinates: null,
       },
-      socialNetworks: {
-        facebook: '',
-        instagram: '',
-        site: '',
-        twitter: '',
-      },
-      prices: {
-        perPerson: {
-          default: 0,
-          withBeverages: 0,
-        },
-      },
+      socialNetworks: null,
+      prices: null,
     });
   });
 });
