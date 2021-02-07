@@ -12,22 +12,14 @@ describe('Place', () => {
       description: '',
       address: {
         street: '',
-        contry: '',
+        country: '',
         city: '',
         neighborhood: '',
         zipCode: '',
         coordinates: null,
       },
-      socialNetworks: {
-        instagram: '',
-        site: '',
-      },
-      prices: {
-        perPerson: {
-          default: 0,
-          withBeverages: 0,
-        },
-      },
+      socialNetworks: null,
+      prices: null,
     });
   });
 });
