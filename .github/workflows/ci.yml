@@ -1,0 +1,29 @@
+name: Continuous Integration
+
+on: push
+
+jobs:
+  test:
+    name: Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - uses: actions/setup-node@master
+      - uses: c-hive/gha-yarn-cache@v1
+
+      - name: Install node modules
+        run: |
+          yarn install
+
+      - name: Diffset
+        id: diffset
+        uses: softprops/diffset@v1
+        with:
+          base: develop
+        env:
+          GITHUB_TOKEN: ${{ secrets.DIFFSET_GITHUB_TOKEN }}
+
+      - name: Run test
+        run: |
+          yarn test --bail --findRelatedTests ${{ steps.diffset.outputs.files }}
