@@ -2,24 +2,24 @@ import { makeObservable, observable } from 'mobx';
 import { Coordinates } from 'ts';
 
 export class Address {
-  street: string = '';
+  street = '';
 
-  country: string = '';
+  country = '';
 
-  city: string = '';
+  city = '';
 
-  neighborhood: string = '';
+  neighborhood = '';
 
-  zipCode: string = '';
+  zipCode = '';
 
   coordinates: Nullable<Coordinates> = null;
 
   constructor(
-    street: string = '',
-    country: string = '',
-    city: string = '',
-    neighborhood: string = '',
-    zipCode: string = '',
+    street = '',
+    country = '',
+    city = '',
+    neighborhood = '',
+    zipCode = '',
     coordinates?: Nullable<Coordinates>
   ) {
     makeObservable(this, {

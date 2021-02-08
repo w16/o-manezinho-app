@@ -1,5 +1,5 @@
 import { Coordinates } from 'ts';
-import { Address } from 'store';
+import { Address } from './address';
 
 export class AddressBuilder {
   _street?: string;

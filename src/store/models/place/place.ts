@@ -1,17 +1,17 @@
 import { makeObservable, observable } from 'mobx';
 import { PlacePrices, SocialNetworks } from 'ts';
-import { Address } from 'store';
+import { Address } from '../address';
 
 export class Place {
-  id: string = '';
+  id = '';
 
-  name: string = '';
+  name = '';
 
-  category: string = '';
+  category = '';
 
-  type: string = '';
+  type = '';
 
-  description: string = '';
+  description = '';
 
   tags: string[] = [];
 

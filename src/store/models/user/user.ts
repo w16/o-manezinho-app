@@ -1,9 +1,9 @@
 import { makeObservable, observable } from 'mobx';
 
 export class User {
-  id: string = '';
+  id = '';
 
-  name: string = '';
+  name = '';
 
   likes: string[] = [];
 
