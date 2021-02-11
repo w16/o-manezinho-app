@@ -13,6 +13,7 @@
     "test-ci": "jest --bail"
   },
   "dependencies": {
+    "@react-native-async-storage/async-storage": "^1.13.4",
     "@react-native-community/masked-view": "^0.1.10",
     "@react-navigation/native": "^5.9.2",
     "mobx": "^6.1.5",
