@@ -12,7 +12,7 @@ export class Pageable extends Status {
 
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
-  onRequest: OnRequest = (): Promise<void> => undefined;
+  onRequest: OnRequest = () => undefined;
 
   constructor(onRequest: OnRequest) {
     super();
