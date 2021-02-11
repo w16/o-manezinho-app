@@ -8,6 +8,6 @@ type Props = {
 
 export const StoreContext = React.createContext<RootStore>(undefined!);
 
-export const StoreProvider = ({ children, store }: Props): React.ReactNode => (
+export const StoreProvider = ({ children, store }: Props): JSX.Element => (
   <StoreContext.Provider value={store}>{children}</StoreContext.Provider>
 );
