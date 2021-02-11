@@ -25,7 +25,7 @@ module.exports = {
     '@typescript-eslint/no-unused-vars': 2,
     'import/prefer-default-export': 0,
     'import/no-unresolved': 0, // Disabled because is typescript who guarantees files import resolution
-    'import/extensions': [2, 'never', { svg: 'always' }],
+    'import/extensions': [2, 'never', { svg: 'always', json: 'always' }],
     'no-plusplus': [2, { allowForLoopAfterthoughts: true }],
     'no-underscore-dangle': 0,
     'no-use-before-define': 0,
